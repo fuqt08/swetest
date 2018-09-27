@@ -1,0 +1,17 @@
+{
+  "name": "fuqt08/swetest",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "fuqt08"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "fuqt08\\": "src"
+    }
+  }
+}
