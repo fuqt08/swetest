@@ -1,5 +1,14 @@
 # Swetest
 
+[![Build Status](https://travis-ci.org/fuqt08/swetest.svg?branch=master)](https://travis-ci.org/fuqt08/swetest)
+[![Latest Stable](https://poser.pugx.org/fuqt08/swetest/version)](https://packagist.org/packages/fuqt08/swetest)
+[![Total Downloads](https://poser.pugx.org/fuqt08/swetest/downloads.png)](https://packagist.org/packages/fuqt08/swetest)
+![DailyDownloads](https://img.shields.io/packagist/dd/fuqt08/swetest.svg)
+[![PHP 7 ready](http://php7ready.timesplinter.ch/fuqt08/swetest/badge.svg)](https://travis-ci.org/fuqt08/swetest)
+
+
+*Based on https://github.com/DestinyLab/swetest*, compatible with Windows server.
+
 Swetest is the simple wrapper of swisseph library's swetest.
 
 ## Requirement
@@ -15,6 +24,20 @@ The recommended way to install Swetest is through Composer.
 curl -sS https://getcomposer.org/installer | php
 ```
 
+Next, update your project's composer.json file to include Swetest:
+
+```json
+composer require fuqt08/swetest
+```
+
+## Usage
+
+```php
+<?php
+
+require_once 'vendor/autoload.php';
+
+use DarkSide666\Swetest\Swetest;
 $swetest = new Swetest();
 
 // ephemeris of Mercury (-p2) starting on 1 Dec 1900,
@@ -92,7 +115,7 @@ Changing the swetest file's path:
 
 require_once 'vendor/autoload.php';
 
-
+use DarkSide666\Swetest\Swetest;
 
 // method 1
 $swetest = new Swetest('/path/to/swetest');
