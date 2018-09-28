@@ -26,7 +26,7 @@ curl -sS https://getcomposer.org/installer | php
 
 Next, update your project's composer.json file to include Swetest:
 
-```json
+```
 composer require fuqt08/swetest
 ```
 
@@ -37,7 +37,7 @@ composer require fuqt08/swetest
 
 require_once 'vendor/autoload.php';
 
-use DarkSide666\Swetest\Swetest;
+use fuqt08\Swetest\Swetest;
 $swetest = new Swetest();
 
 // ephemeris of Mercury (-p2) starting on 1 Dec 1900,
@@ -115,7 +115,7 @@ Changing the swetest file's path:
 
 require_once 'vendor/autoload.php';
 
-use DarkSide666\Swetest\Swetest;
+use fuqt08\Swetest\Swetest;
 
 // method 1
 $swetest = new Swetest('/path/to/swetest');

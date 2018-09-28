@@ -1,6 +1,6 @@
 {
   "name": "fuqt08/swetest",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "authors": [
     {
       "name": "fuqt08"
@@ -11,7 +11,7 @@
   },
   "autoload": {
     "psr-4": {
-      "fuqt08\\": "src"
+      "fuqt08\\Swetest\\": "src/"
     }
   }
 }
